@@ -1,0 +1,22 @@
+{
+    "title": "Test material 2022",
+    "githubLoc": "https://raw.githubusercontent.com/RRISTM/stm32_threadx/master/doc",
+    "options": {
+      "allowMenu": true,
+      "allowTagSelect": false
+    },
+    "filesToLoadArr": [
+      {
+        "name": "File 1",
+        "path": "/folder1",
+        "file": "file1.md"
+      }
+    ],
+    "menuStructure": [
+      {
+        "type": "File",
+        "name": "File 1",
+        "file": "file1.md"
+      }
+    ]
+  }
