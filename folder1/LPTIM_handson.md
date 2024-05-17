@@ -123,7 +123,6 @@ for (i = 0; i < DUTYCNT; i++) {
 }
 ArrValue = 640;
 
-// LpTim3Icr = LPTIM_ICR_CC1CF | LPTIM_ICR_CC2CF;
 sConfigOC.Pulse = 160;
 sConfigOC.OCPolarity = LPTIM_OCPOLARITY_HIGH;
 if (HAL_LPTIM_OC_ConfigChannel(&hlptim1, &sConfigOC, LPTIM_CHANNEL_1) != HAL_OK)
