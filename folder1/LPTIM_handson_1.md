@@ -14,7 +14,7 @@ Counter - Period
 ```
 Channel 1 - Pulse value
 ```c
-640
+160
 ```
 
 ## Settings for Linked-list queue for UPDATE EVENT 
