@@ -120,5 +120,4 @@ MEMORY
 ```
 
 ## Expected results
-My image
 ![Image1](./img/LPmodes_result.png)
