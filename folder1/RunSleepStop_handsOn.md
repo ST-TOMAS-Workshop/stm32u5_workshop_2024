@@ -1,7 +1,3 @@
-# Title
-## Title2
-https://www.markdownguide.org/basic-syntax/
-
 ## Deactivate RTC WakeUp in MX_RTC_Init(void)
 ```c
   /* USER CODE BEGIN RTC_Init 2 */
@@ -67,9 +63,9 @@ https://www.markdownguide.org/basic-syntax/
   CLEAR_REG(RCC->APB1SMENR2);
   CLEAR_REG(RCC->APB2SMENR);
 
-    HAL_SuspendTick();
-    HAL_PWR_EnterSLEEPMode(PWR_LOWPOWERREGULATOR_ON, PWR_SLEEPENTRY_WFI);
-    HAL_ResumeTick();
+  HAL_SuspendTick();
+  HAL_PWR_EnterSLEEPMode(PWR_LOWPOWERREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+  HAL_ResumeTick();
 
   /* 8 - Measure consumption in Stop 2 mode Full SRAM retention ---------------------------------------*/
   /* Enter in Stop 2 mode */
@@ -79,14 +75,14 @@ https://www.markdownguide.org/basic-syntax/
   HAL_PWREx_EnterSTOP2Mode(PWR_STOPENTRY_WFI);
 
   /* Disable RAM page(s) content lost in Stop mode (Stop 0, 1, 2, 3) */
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM1_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM2_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM3_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_ICACHE_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_DCACHE1_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_DMA2DRAM_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_PERIPHRAM_FULL_STOP_RETENTION);
-   HAL_PWREx_DisableRAMsContentStopRetention(PWR_PKA32RAM_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM1_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM2_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_SRAM3_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_ICACHE_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_DCACHE1_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_DMA2DRAM_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_PERIPHRAM_FULL_STOP_RETENTION);
+  HAL_PWREx_DisableRAMsContentStopRetention(PWR_PKA32RAM_FULL_STOP_RETENTION);
 
    /*enable AHB2 bus again because GPIO PC7 LED toggling*/
    (*RCC).CFGR2 &= ~(RCC_CFGR2_AHB2DIS1);
@@ -111,7 +107,3 @@ https://www.markdownguide.org/basic-syntax/
   }
 ```
 
-My image
-![Image1](./img/image1.png)
-
-[link](www.st.com)
