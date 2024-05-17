@@ -1,3 +1,12 @@
+## Reduce SRAM and Flash size in linker script
+```c
+MEMORY
+{
+  RAM    (xrw)    : ORIGIN = 0x28000000,    LENGTH = 16K
+  FLASH    (rx)    : ORIGIN = 0x08000000,    LENGTH = 1024K
+}
+```
+
 ## Deactivate RTC WakeUp in MX_RTC_Init(void)
 ```c
   /* USER CODE BEGIN RTC_Init 2 */
