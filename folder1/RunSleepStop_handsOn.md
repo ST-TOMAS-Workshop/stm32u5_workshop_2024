@@ -1,3 +1,6 @@
+# Cheat sheet for RUN - SLEEP - STOP2 Hands on
+How to reduce consutmption step by step on STM32U575 device in every operation mode!
+
 ## Reduce SRAM and Flash size in linker script
 ```c
 MEMORY
