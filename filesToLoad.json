@@ -1,15 +1,35 @@
 {
-    "title": "Test material 2022",
-    "githubLoc": "https://raw.githubusercontent.com/RRISTM/stm32_threadx/master/doc",
+    "title": "U5 dedicated training 2024",
+    "githubLoc": "https://raw.githubusercontent.com/jank-st/test_materil_2022/master",
     "options": {
       "allowMenu": true,
       "allowTagSelect": false
     },
     "filesToLoadArr": [
       {
-        "name": "File 1",
+        "name": "LPTIM_handson_1",
         "path": "/folder1",
-        "file": "file1.md"
+        "file": "LPTIM_handson_1.md"
+      },
+      {
+        "name": "LPTIM_handson_2",
+        "path": "/folder1",
+        "file": "LPTIM_handson_2.md"
+      },
+      {
+        "name": "LPTIM_handson_3",
+        "path": "/folder1",
+        "file": "LPTIM_handson_3.md"
+      },
+      {
+        "name": "RunSleepStop_handsOn",
+        "path": "/folder1",
+        "file": "RunSleepStop_handsOn.md"
+      },
+      {
+        "name": "Standby_handsOn",
+        "path": "/folder1",
+        "file": "Standby_handsOn.md"
       }
     ],
     "menuStructure": [
