@@ -59,7 +59,7 @@ LpTim3Ic2_Queue
 First loop node name
 
 ```c
-Ic2Node
+Ic2Node1
 ```
 
 ## Settings for Linked-list queue for IC2 EVENT - Ic2Node1
@@ -83,6 +83,12 @@ Runtime configuration - Data size
 ```
 
 ## Settings for Linked-list queue for IC2 EVENT - Ic2Node2
+
+General - Name
+
+```c
+Ic2Node2
+```
 
 Runtime configuration - Source adress
 
@@ -149,7 +155,7 @@ extern DMA_QListTypeDef LpTim3Ic2_Queue;
 /* USER CODE END PV */
 ```
 
-Add this code to the end **USER CODE 2** section<br>
+Add this code to the end of **USER CODE 2** section<br>
 
 
 ```c
