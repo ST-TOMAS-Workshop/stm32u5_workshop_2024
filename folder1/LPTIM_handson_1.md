@@ -1,12 +1,12 @@
 # Cheat sheet for LPTIMx Hands on - PART 1
-configure LPTIM1 a LPDMA to generate PWM on CH1:
+configure LPTIM1 a LPDMA to generate PWM on CH1:<br>
 
-- with frequency approximately 50 Hz (32.768 / 640)
+- with frequency approximately 50 Hz (32.768 / 640)<br>
   
-- duty cycle will be changed in steps 0/25/50/75/100 approx. each second (each 50 PWM cycles)
+- duty cycle will be changed in steps 0/25/50/75/100 approx. each second (each 50 PWM cycles)<br>
   
 - CCR1 will be modified at each update event
-ARR shadow register will be set at rising edge of output signal => UE flag will be cleared at UE 
+ARR shadow register will be set at rising edge of output signal => UE flag will be cleared at UE<br> 
 
 For proper application settings is neccessary follow the presentation, where all settings are mentioned.
 
