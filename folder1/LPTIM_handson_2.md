@@ -148,7 +148,9 @@ extern DMA_QListTypeDef LpTim3Ic1_Queue;
 extern DMA_QListTypeDef LpTim3Ic2_Queue;
 /* USER CODE END PV */
 ```
+
 Add this code to the end **USER CODE 2** section
+
 ```c
 LpTim3Icr = LPTIM_ICR_CC1CF | LPTIM_ICR_CC2CF;
 
