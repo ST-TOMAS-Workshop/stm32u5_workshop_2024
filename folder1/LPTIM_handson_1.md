@@ -125,7 +125,7 @@ extern uint32_t ArrValue;
 DMA_NodeTypeDef Ccr1Node __attribute__ ((section (".sram4")));
 DMA_QListTypeDef LpTim1_Queue __attribute__ ((section (".sram4")));
 DMA_NodeTypeDef ArrNode __attribute__ ((section (".sram4")));
-DMA_QListTypeDef __attribute__ ((section (".sram4")));
+DMA_QListTypeDef LpTim1Arr_Queue __attribute__ ((section (".sram4")));
 ```
 
 ## Modify main.c
