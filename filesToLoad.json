@@ -33,10 +33,48 @@
       }
     ],
     "menuStructure": [
-      {
-        "type": "File",
-        "name": "File 1",
-        "file": "file1.md"
-      }
+{
+      "type": "Folder",
+      "name": "STANDBY HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "Standby_HandsOn",
+          "file": "Standby_handsOn.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "RUN/SLEEP/STOP HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "RunSleepStop_HandsOn",
+          "file": "RunSleepStop_handsOn.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "LPTIM HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "LPTIM handson Part1",
+          "file": "LPTIM_handson_1.md"
+        },
+        {
+          "type": "File",
+          "name": "LPTIM handson Part2",
+          "file": "LPTIM_handson_2.md"
+        },
+        {
+          "type": "File",
+          "name": "LPTIM handson Part3",
+          "file": "LPTIM_handson_3.md"
+        }
+      ]
+    }
     ]
   }
