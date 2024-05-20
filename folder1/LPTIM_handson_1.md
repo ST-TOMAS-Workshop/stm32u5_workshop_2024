@@ -8,6 +8,7 @@ ARR shadow register will be set at rising edge of output signal => UE flag will 
 For proper application settings is neccessary follow the presentation, where all settings are mentioned.
 
 ## Settings for LPTIM1
+
 Counter - Period
 
 ```c
@@ -52,6 +53,7 @@ DUTYSTEADY * DUTYCNT * 4
 ```
 
 ## Settings for Linked-list queue for LPTIM1.CH1  
+
 Queue name
 
 ```c
@@ -86,6 +88,7 @@ Runtime configuration - Data size
   } >SRAM4
 
 ```
+
 ## Modify main.h
 
 ```c
@@ -102,6 +105,7 @@ extern uint32_t ArrValue;
 #define DUTYCNT 5
 /* USER CODE END Private defines */
 ```
+
 ## Modify linked_list.c
 
 ```c
@@ -115,6 +119,7 @@ DMA_QListTypeDef LpTim1_Queue __attribute__ ((section (".sram4")));
 DMA_NodeTypeDef ArrNode __attribute__ ((section (".sram4")));
 DMA_QListTypeDef __attribute__ ((section (".sram4")));
 ```
+
 ## Modify main.c
 
 ```c
