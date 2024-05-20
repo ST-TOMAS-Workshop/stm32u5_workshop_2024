@@ -17,6 +17,7 @@ Counter - Period
 ```c
 640
 ```
+
 Channel 1 - Pulse value
 
 ```c
@@ -62,21 +63,25 @@ Queue name
 ```c
 LpTim1Arr_Queue
 ```
+
 First loop node name
 
 ```c
 ArrNode
 ```
+
 Runtime configuration - Source adress
 
 ```c
 (uint32_t)&ArrValue
 ```
+
 Runtime configuration - Destination adress
 
 ```c
 (uint32_t)&((*LPTIM1).ARR)
 ```
+
 Runtime configuration - Data size
 
 ```c
