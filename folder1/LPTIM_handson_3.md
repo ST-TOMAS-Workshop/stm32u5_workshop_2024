@@ -118,7 +118,8 @@ Add this code to **USER CODE 2** section between LPTIM1 and LPTIM 3 initializati
 
 
 ```c
-// LPUART1 will be controlled by DMA,// therefore we enable it by direct register access
+// LPUART1 will be controlled by DMA,
+// therefore we enable it by direct register access
 (*LPUART1).CR3 |= USART_CR3_DMAT;
 __HAL_UART_ENABLE(&hlpuart1);
 ```
@@ -127,7 +128,8 @@ Add this code to the end of **USER CODE 2** section<br>
 
 
 ```c
-//Enable all used peripherals as autonomous//in STOP mode and enter STOP2 mode
+//Enable all used peripherals as autonomous
+//in STOP mode and enter STOP2 mode
 (*RCC).SRDAMR |= (RCC_SRDAMR_SRAM4AMEN | RCC_SRDAMR_LPDMA1AMEN \
               | RCC_SRDAMR_LPTIM1AMEN | RCC_SRDAMR_LPTIM3AMEN \
               | RCC_SRDAMR_LPUART1AMEN);
