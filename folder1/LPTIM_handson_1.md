@@ -21,48 +21,59 @@ Channel 1 - Pulse value
 
 ## Settings for Linked-list queue for UPDATE EVENT 
 Queue name
+
 ```c
 LpTim1_Queue
 ```
 First loop node name
+
 ```c
 Ccr1Node
 ```
 Runtime configuration - Source adress
+
 ```c
 (uint32_t)LpTim1Duty
 ```
 Runtime configuration - Destination adress
+
 ```c
 (uint32_t)&((*LPTIM1).CCR1)
 ```
 Runtime configuration - Data size
+
 ```c
 DUTYSTEADY * DUTYCNT * 4
 ```
 
 ## Settings for Linked-list queue for LPTIM1.CH1  
 Queue name
+
 ```c
 LpTim1Arr_Queue
 ```
 First loop node name
+
 ```c
 ArrNode
 ```
 Runtime configuration - Source adress
+
 ```c
 (uint32_t)&ArrValue
 ```
 Runtime configuration - Destination adress
+
 ```c
 (uint32_t)&((*LPTIM1).ARR)
 ```
 Runtime configuration - Data size
+
 ```c
 4
 ```
 ## Create .sram4 section in STM32U575ZITXQ_FLASH.ld
+
 ```c
   .sram4 :
   {
@@ -71,12 +82,14 @@ Runtime configuration - Data size
 
 ```
 ## Modify main.h
+
 ```c
 /* USER CODE BEGIN EFP */
 extern uint32_t LpTim1Duty[];
 extern uint32_t ArrValue;
 /* USER CODE END EFP */
 ```
+
 ```c
 /* USER CODE BEGIN Private defines */
 #define DUTYSTEADY 50
@@ -85,6 +98,7 @@ extern uint32_t ArrValue;
 /* USER CODE END Private defines */
 ```
 ## Modify linked_list.c
+
 ```c
 /* USER CODE BEGIN Includes */
 #include "main.h"
@@ -97,11 +111,13 @@ DMA_NodeTypeDef ArrNode __attribute__ ((section (".sram4")));
 DMA_QListTypeDef __attribute__ ((section (".sram4")));
 ```
 ## Modify main.c
+
 ```c
 /* USER CODE BEGIN Includes */
 #include "linked_list.h"
 /* USER CODE END Includes */
 ```
+
 ```c
 /* USER CODE BEGIN PV */
 LPTIM_OC_ConfigTypeDef sConfigOC = {0};
@@ -114,6 +130,7 @@ extern DMA_QListTypeDef LpTim1_Queue;
 extern DMA_QListTypeDef LpTim1Arr_Queue;
 /* USER CODE END PV */
 ```
+
 ```c
 /* USER CODE BEGIN 2 */
 value = 0;
