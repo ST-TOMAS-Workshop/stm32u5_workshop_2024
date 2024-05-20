@@ -20,6 +20,7 @@ Channel 1 - Pulse value
 ```
 
 ## Settings for Linked-list queue for UPDATE EVENT 
+
 Queue name
 
 ```c
