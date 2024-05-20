@@ -99,7 +99,7 @@ Runtime configuration - Source adress
 Runtime configuration - Destination adress
 
 ```c
-(uint32_t)&LpTim3Icr
+(uint32_t)&((*LPTIM3).ICR)
 ```
 
 Runtime configuration - Data size
