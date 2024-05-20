@@ -25,21 +25,25 @@ Queue name
 ```c
 LpTim1_Queue
 ```
+
 First loop node name
 
 ```c
 Ccr1Node
 ```
+
 Runtime configuration - Source adress
 
 ```c
 (uint32_t)LpTim1Duty
 ```
+
 Runtime configuration - Destination adress
 
 ```c
 (uint32_t)&((*LPTIM1).CCR1)
 ```
+
 Runtime configuration - Data size
 
 ```c
