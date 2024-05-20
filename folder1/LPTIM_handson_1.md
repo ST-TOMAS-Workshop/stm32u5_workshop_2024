@@ -9,10 +9,12 @@ For proper application settings is neccessary follow the presentation, where all
 
 ## Settings for LPTIM1
 Counter - Period
+
 ```c
 640
 ```
 Channel 1 - Pulse value
+
 ```c
 160
 ```
