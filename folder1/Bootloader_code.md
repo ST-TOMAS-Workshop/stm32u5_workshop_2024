@@ -2,7 +2,7 @@
 
 ```c
 /* USER CODE BEGIN Includes */
-#include "menu.h“
+#include "menu.h"
 #include "common.h"
 /* USER CODE END Includes */
 ```
