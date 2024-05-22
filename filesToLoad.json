@@ -30,6 +30,16 @@
         "name": "Standby_handsOn",
         "path": "/folder1",
         "file": "Standby_handsOn.md"
+      },
+      {
+        "name": "Bootloader_UserApp",
+        "path": "/folder1",
+        "file": "Bootloader_UserApp.md"
+      },
+      {
+        "name": "Bootloader_code",
+        "path": "/folder1",
+        "file": "Bootloader_code.md"
       }
     ],
     "menuStructure": [
@@ -73,6 +83,22 @@
           "type": "File",
           "name": "LPTIM handson Part3",
           "file": "LPTIM_handson_3.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "BOOTLOADER HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "BOOTLOADER - User application",
+          "file": "Bootloader_UserApp.md"
+        },
+        {
+          "type": "File",
+          "name": "BOOTLOADER - Code",
+          "file": "Bootloader_code.md"
         }
       ]
     }
