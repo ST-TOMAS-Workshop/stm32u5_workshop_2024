@@ -1,0 +1,106 @@
+{
+    "title": "U5 dedicated training 2024",
+    "githubLoc": "https://raw.githubusercontent.com/jank-st/test_materil_2022/master",
+    "options": {
+      "allowMenu": true,
+      "allowTagSelect": false
+    },
+    "filesToLoadArr": [
+      {
+        "name": "LPTIM_handson_1",
+        "path": "/folder1",
+        "file": "LPTIM_handson_1.md"
+      },
+      {
+        "name": "LPTIM_handson_2",
+        "path": "/folder1",
+        "file": "LPTIM_handson_2.md"
+      },
+      {
+        "name": "LPTIM_handson_3",
+        "path": "/folder1",
+        "file": "LPTIM_handson_3.md"
+      },
+      {
+        "name": "RunSleepStop_handsOn",
+        "path": "/folder1",
+        "file": "RunSleepStop_handsOn.md"
+      },
+      {
+        "name": "Standby_handsOn",
+        "path": "/folder1",
+        "file": "Standby_handsOn.md"
+      },
+      {
+        "name": "Bootloader_UserApp",
+        "path": "/folder1",
+        "file": "Bootloader_UserApp.md"
+      },
+      {
+        "name": "Bootloader_code",
+        "path": "/folder1",
+        "file": "Bootloader_code.md"
+      }
+    ],
+    "menuStructure": [
+{
+      "type": "Folder",
+      "name": "STANDBY HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "Standby_HandsOn",
+          "file": "Standby_handsOn.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "RUN/SLEEP/STOP HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "RunSleepStop_HandsOn",
+          "file": "RunSleepStop_handsOn.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "LPTIM HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "LPTIM handson Part1",
+          "file": "LPTIM_handson_1.md"
+        },
+        {
+          "type": "File",
+          "name": "LPTIM handson Part2",
+          "file": "LPTIM_handson_2.md"
+        },
+        {
+          "type": "File",
+          "name": "LPTIM handson Part3",
+          "file": "LPTIM_handson_3.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "BOOTLOADER HANDS-ON",
+      "children": [
+        {
+          "type": "File",
+          "name": "BOOTLOADER - User application",
+          "file": "Bootloader_UserApp.md"
+        },
+        {
+          "type": "File",
+          "name": "BOOTLOADER - Code",
+          "file": "Bootloader_code.md"
+        }
+      ]
+    }
+    ]
+  }
